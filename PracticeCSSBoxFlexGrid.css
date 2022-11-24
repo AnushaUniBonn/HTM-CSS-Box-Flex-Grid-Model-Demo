@@ -1,0 +1,148 @@
+﻿/*Box Model*/
+*
+{
+    margin:0;
+    font-size:40px;
+    padding:0;
+
+}
+/* *{} values in it - consider all elements in a page as whole and values are applied to it*/
+.box-one {
+    background-color: aqua;
+    padding: 20px;
+    border: 20px solid darkgreen;
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    box-sizing:border-box;
+}
+/*border value - greater value is taken between two elements and 
+    border merges between two adjacent or successive elements and border is shared between two elements
+*/
+
+.box-two {
+    background-color: hotpink;
+    padding: 30px;
+    border: 70px solid red;
+    width: 200px;
+    height: 200px;
+    margin:70px;
+}
+/*Flex Box Model*/
+.flexbox-container {
+    display: flex;
+    height: 800px;
+    background-color: darkmagenta;
+    align-items: center;
+    justify-content: space-around;
+    /*flex-wrap: wrap;*/
+    /*flex-direction: column;*/
+    /*justify-content: flex-start;*/
+    /*justify-content: center;*/
+    /*justify-content: space-between;*/
+    /*align-items:stretch;*/
+    /*align-items: flex-start;*/
+    /*align-content: center;*/
+    /* align-content: flex-start;*/
+    /* align-content: flex-end;*/
+    /* align-content: space-between;*/
+}
+.flexbox-item {
+    /* short hand property - flex : grow shrink basis;*/
+    flex: 1 0 0px;
+    height:100px;
+    width:100px;
+    border:10px solid black;
+    background-color:yellow;
+}
+.flexbox-item-1 {
+    min-height: 100px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    order:3;
+}
+.flexbox-item-2 {
+    min-height: 200px;
+    flex-grow:2;
+    flex-basis:0;
+    align-self:center;
+    order:1;
+}
+.flexbox-item-3 {
+    min-height: 300px;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-self: flex-start;
+    order:1;
+}
+/*Grid Model*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 250px;
+    grid-auto-rows: minmax(150px auto);
+    grid-gap: 20px;
+    justify-items:stretch;
+    align-items:stretch;
+    /*justify-items: start;
+    justify-items: center;
+    justify-items: end;
+    align-items: end;*/
+    /*align-items: start;
+    align-items: center;*/
+    /*justify-content: center;
+    align-content:center;
+    justify-content:stretch;
+    justify-content:space-around;
+    align-content: stretch;
+    height: 100vh;*/
+    /*justify-content: start;
+    justify-content: end;*/
+    /*grid-template-areas: "header"
+    "sidebar content"
+    "sidebar content"*/
+}
+    /*grid-row-gap:20px;
+    grid-column-gap:10px;*/
+    /*grid-template-columns:200px 100px;*/
+    /*grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(4,100px);*/
+    /*grid-template-rows: 200px 150px;*/
+    /*grid-auto-rows:150px;
+    grid-template-rows:200px;*/
+
+.grid-item {
+    background-color:chartreuse;
+    border:1px solid black;
+
+ }
+
+.grid-item-1 {
+    grid-column:span 2;
+    align-self:start;
+    justify-self:center;;
+    /*grid-area:header;*/
+    /*grid-column: 1 / -1;*/
+    /*grid-column-start:1;
+    grid-column-end:-1;*/
+}
+
+.grid-item-2 {
+    grid-row:span 2;
+    /*grid-area:sidebar;
+    grid-row-start:2;
+    grid-row-end: 4;*/
+}
+
+.grid-item-3 {
+    grid-row:span 2;
+    /*grid-area:content;
+    grid-row-start:2;
+    grid-row-end: 4;*/
+}
+.grid-item-4 {
+    /*grid-area: sidebar;*/
+}
+
+.grid-item-5 {
+    /*grid-area: content;*/
+}
