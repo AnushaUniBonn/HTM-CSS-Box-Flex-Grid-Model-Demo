@@ -1,1 +1,1 @@
-# HTM-CSS-Box-Flex-Grid-Model-Demo
+Download all files to your local folder. Open file "PracticeCSSBoxFlexGridinHTML.html" (Execute or Run )in any web browser like Chrome or Microsoft Edge. The program for HTML Page will be opened with CSS applied to it.
